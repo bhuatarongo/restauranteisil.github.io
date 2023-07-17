@@ -96,7 +96,7 @@ article{
 
 #principal{  
     position: relative;
-    background: linear-gradient(rgba(28, 119, 124, 0.7), rgba(28, 119, 124, 0.7)), url('/imagenes/comida.jpg');
+    background: linear-gradient(rgba(28, 119, 124, 0.7), rgba(28, 119, 124, 0.7)), url('../imagenes/comida.jpg');
     background-size: cover;
     background-position: center;
 
