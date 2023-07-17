@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+main{
+    width: 80%;
+    background-color: aqua;
+    margin: auto;
+    /*FLEX PADRE*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #d9ff00;
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+header{
+    width: 100%;
+    background-color: #ff5e00;
+    padding: 20px;
+    /*FLEX PADRE*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+#logo img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+#logo a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#menu1{
+    width: 70%;
+    background-color: blue;
+    /*flex padre*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu1 a{
+    text-decoration: none;
+    background-color: #f2de00;
+    color: rgb(255, 60, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo*/
+    flex-grow: 1; /*aumenta de manera proporcional*/
+    flex-shrink: 1;/*disminuye de manera proporcional*/
+}
+
+#menu1 a:hover{
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+}
+
+article{
+    background-color: white;
+    padding: 20px;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/* respete los tamaños*/
+    /* flex hijo */
+    flex-wrap: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    flex: 1 1 100%;/*version resumida*/
+}
+
+#principal{  
+    position: relative;
+    background: linear-gradient(rgba(28, 119, 124, 0.7), rgba(28, 119, 124, 0.7)), url('/imagenes/comida.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    background-color: #1c777c;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60vh;
+}
+
+h1{
+    padding: 10px;
+}
+
+p{
+    padding: 10px;
+    
+}
+
+.precio{
+    text-align: end;
+    background-color: #d9ff00;
+}
+
+article img{
+    width: 150px;
+    height: 150px;
+}
+
+#contenido{
+    flex: 1;
+    display: flex;
+    
+    flex-direction: row; 
+    /* flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#subContenido1{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#subContenido1 img{
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+#subContenido{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+}
+
+.cajas{
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 50px  ;
+}
+
+.img_contenido{
+    height: 150px;
+    width: 400px;
+    margin-right: 10px;
+    /* flex hijo*/
+    flex-wrap: 1;
+    flex-shrink: 1;
+    flex: 1 1 50%;
+}
+
+.img_contenido img{
+    border-radius: 20px;
+    /* flex hijo*/
+    flex-wrap: 1;
+    flex-shrink: 1;
+    flex: 1 1 50%;
+}
+
+
+
+.caja_hija{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.caja_hija2{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+aside{
+    background-color: black;
+    padding: 20px;
+    /* flex padre */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;/* respete los tamaños*/
+    /* flex hijo */
+    flex-wrap: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+}
+
+footer{
+    width: 100%;
+    background-color:  #ff5e00;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/* respete los tamaños*/
+    justify-content: space-between;
+    /* flex hijo */
+    flex-wrap: 1;
+    flex-shrink: 1;
+}
+
+#menu2, #menu3{
+    /* flex padre */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menu2 p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    /* flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#menu3 a{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    /* flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+ #menu3 a img{
+    
+    color: white;
+    width: 50px;
+    padding: 10px;
+    /* flex hijo*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#menu3 a:hover{
+    color: #000000;
+    background-color: white;
+    
+    border-radius: 50%;
+}
+
+/* configuracion para tablet*/
+
+@media screen and (max-width:1000px)/* tambien funciona @media (max-width:900px)*/
+{
+   main{
+    flex-direction: column;
+   } 
+
+   header{
+    flex-direction: column;
+    padding: 0;
+   }
+
+   #menu1{
+    width: 100%;
+   }
+
+   footer{
+    justify-content: center;
+   }
+
+   aside{
+    flex-direction: row;
+   }
+
+   #logo img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width:600px)
+{
+    footer{
+        width: 100%;
+    }
+
+    #logo img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
